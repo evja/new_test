@@ -4,7 +4,11 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
 
-   def goodbye
+   def hello
     render text: "¡Hola, Mundo"
+  end
+
+  def goodbye
+    render text: "Goodbye my favorite WORLD!"
   end
 end
